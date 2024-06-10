@@ -46,52 +46,80 @@
 //     }
 //   }
 // target elements with the "draggable" class
-interact('.button')
-  .draggable({
-    // enable inertial throwing
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize interact.js on elements with the "button" class
+  interact('.button').draggable({
     inertia: true,
-    // keep the element within the area of it's parent
     modifiers: [
       interact.modifiers.restrictRect({
         restriction: 'none',
         endOnly: true
       })
     ],
-    // enable autoScroll
     autoScroll: true,
-
     listeners: {
-      // call this function on every dragmove event
       move: dragMoveListener,
+      end: function (event) {
+        var target = event.target;
+        var x = parseFloat(target.getAttribute('data-x')) || 0;
+        var y = parseFloat(target.getAttribute('data-y')) || 0;
+        var id = target.getAttribute('id');
 
-      // call this function on every dragend event
-      end (event) {
-        var textEl = event.target.querySelector('p')
+        // Save the position in localStorage using the element's ID
+        localStorage.setItem(id + '-position-x', x);
+        localStorage.setItem(id + '-position-y', y);
 
-        textEl && (textEl.textContent =
-          'moved a distance of ' +
-          (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
-                     Math.pow(event.pageY - event.y0, 2) | 0))
-            .toFixed(2) + 'px')
+        var textEl = target.querySelector('p');
+        if (textEl) {
+          textEl.textContent = 'Moved a distance of ' +
+            (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                       Math.pow(event.pageY - event.y0, 2)) | 0).toFixed(2) + 'px';
+        }
       }
     }
-  })
+  });
 
-function dragMoveListener (event) {
-  var target = event.target
-  // keep the dragged position in the data-x/data-y attributes
-  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
-  var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+  // Load positions from localStorage
+  document.querySelectorAll('.button').forEach(function(button) {
+    var id = button.getAttribute('id');
+    var x = parseFloat(localStorage.getItem(id + '-position-x')) || 0;
+    var y = parseFloat(localStorage.getItem(id + '-position-y')) || 0;
 
-  // translate the element
-  target.style.webkitTransform =
-    target.style.transform =
-      'translate(' + x + 'px, ' + y + 'px)'
+    button.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+    button.setAttribute('data-x', x);
+    button.setAttribute('data-y', y);
+  });
 
-  // update the posiion attributes
-  target.setAttribute('data-x', x)
-  target.setAttribute('data-y', y)
+  // Reset button functionality
+  document.getElementById('reset-button').addEventListener('click', function() {
+    document.querySelectorAll('.button').forEach(function(button) {
+      var id = button.getAttribute('id');
+
+      // Reset the position to default (0, 0)
+      button.style.transform = 'translate(0px, 0px)';
+      button.setAttribute('data-x', 0);
+      button.setAttribute('data-y', 0);
+
+      // Clear the saved position in localStorage
+      localStorage.removeItem(id + '-position-x');
+      localStorage.removeItem(id + '-position-y');
+    });
+  });
+});
+
+// Drag move listener function
+function dragMoveListener(event) {
+  var target = event.target;
+  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+  var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+  // Translate the element
+  target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+
+  // Update the position attributes
+  target.setAttribute('data-x', x);
+  target.setAttribute('data-y', y);
 }
 
-// this function is used later in the resizing and gesture demos
-window.dragMoveListener = dragMoveListener
+// This function is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener;
