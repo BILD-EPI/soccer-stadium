@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bg img{
+    position: fixed;
+    width: 100vw;
+    z-index: -15;
+    border-radius: 30px;
+  }
+
+  .titulo img{
+      width: 100vw;
+      position: fixed;
+      z-index: -5;
+      top: 10px;
+  }
+
+  .campo img{
+    position: fixed;
+    width: 100vw;
+    left: 0vw;
+    top: 220px;
+    z-index: -10;
+    
+  }
+
+.button{
+        height: 280px;
+        touch-action: none;
+        user-select: none;
+        position: fixed;
+}
+
+.row1{
+    left: -60px;
+}
+.row2{
+    left: 90px;
+}
+.row3{
+    left: 240px;
+}
+.row4{
+    left: 390px;
+}
+.row5{
+    left: 540px;
+}
+.row6{
+    left: 690px;
+}
+.row7{
+    left: 840px;
+}
+.row8{
+    left: 990px;
+}
+.row9{
+    left: 1140px;
+}
+
+.pos1{
+    top: 500px;
+}
+.pos2{
+    top: 310px;
+}
+.pos3{
+    top: 470px;
+}
+.pos4{
+    top: 500px;
+}
+.pos5{
+    top: 350px;
+}
+.pos6{
+    top: 180px;
+}
+.pos7{
+    top: 350px;
+}
+.pos8{
+    top: 1000px;
+}
+.pos9{
+    top: 1050px;
+}
+.pos10{
+    top: 1100px;
+}
+.pos11{
+    top: 1150px;
+}
+.pos12{
+    top: 1200px;
+}
+.pos13{
+    top: 1250px;
+}
