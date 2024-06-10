@@ -28,11 +28,11 @@
       right: auto;   
   }
 
-  .spielfeld img{
+  .colorbar img{
     position: fixed;
-    width: 105%;
-    left: -35px;
-    top: -5px;
+    width: 101%;
+    left: -6px;
+    bottom: 0px;
     z-index: -10;
     
   }
