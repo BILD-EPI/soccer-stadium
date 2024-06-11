@@ -33,11 +33,26 @@
             }
         }
 
+        function blinkElement(element) {
+            element.classList.add('blink');
+            console.log(element)
+            setTimeout(function() {
+                element.classList.remove('blink');
+                toggleButtons(); 
+            }, 1000); 
+        }
+
         saveButton.addEventListener('click', toggleButtons);
         loadButton.addEventListener('click', toggleButtons);
-        saveOne.addEventListener('click', toggleButtons);
-        saveTwo.addEventListener('click', toggleButtons);
-        saveThree.addEventListener('click', toggleButtons);
+        saveOne.addEventListener('click', function() {
+            blinkElement(saveOne);
+        });
+        saveTwo.addEventListener('click', function() {
+            blinkElement(saveTwo);
+        });
+        saveThree.addEventListener('click', function() {
+            blinkElement(saveThree);
+        });
     });
 
 
