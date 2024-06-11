@@ -3,18 +3,27 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
         font-family: GothamCondensed-Medium, 'Gotham Condensed';
         font-size: 19px;
         font-weight: 500;
       }
 
-      .cls-2 {
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
         fill: red;
+      }
+
+      .cls-3, .cls-2 {
         stroke-width: 0px;
       }
     </style>
   </defs>
-  <circle class="cls-2" cx="10.48" cy="10.48" r="10.48"/>
+  <g>
+    <path class="cls-3" d="M10.48,20.47C4.98,20.47.5,15.99.5,10.48S4.98.5,10.48.5s9.98,4.48,9.98,9.98-4.48,9.98-9.98,9.98Z"/>
+    <path class="cls-2" d="M10.48,1c5.23,0,9.48,4.25,9.48,9.48s-4.25,9.48-9.48,9.48S1,15.71,1,10.48,5.25,1,10.48,1M10.48,0C4.69,0,0,4.69,0,10.48s4.69,10.48,10.48,10.48,10.48-4.69,10.48-10.48S16.27,0,10.48,0h0Z"/>
+  </g>
   <text class="cls-1" transform="translate(8.21 17)"><tspan x="0" y="0">1</tspan></text>
 </svg>

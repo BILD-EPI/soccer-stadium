@@ -13,28 +13,33 @@
         function toggleButtons() {
             if (saveButton.style.display === 'none') {
                 saveButton.style.display = 'inline-block';
-                saveOne.style.display = 'inline-block';
-                saveTwo.style.display = 'inline-block';
-                saveThree.style.display = 'inline-block';
                 loadButton.style.display = 'none';
-                loadOne.style.display = 'none';
-                loadTwo.style.display = 'none';
-                loadThree.style.display = 'none';
-            } else {
-                saveButton.style.display = 'none';
-                loadButton.style.display = 'inline-block';
-                loadOne.style.display = 'inline-block';
+                 loadOne.style.display = 'inline-block';
                 loadTwo.style.display = 'inline-block';
                 loadThree.style.display = 'inline-block';
                 saveOne.style.display = 'none';
                 saveTwo.style.display = 'none';
                 saveThree.style.display = 'none';
+            } else {
+                saveButton.style.display = 'none';
+                loadButton.style.display = 'inline-block';
+
+                saveOne.style.display = 'inline-block';
+                saveTwo.style.display = 'inline-block';
+                saveThree.style.display = 'inline-block';
+                loadOne.style.display = 'none';
+                loadTwo.style.display = 'none';
+                loadThree.style.display = 'none';
             }
         }
 
         saveButton.addEventListener('click', toggleButtons);
         loadButton.addEventListener('click', toggleButtons);
+        saveOne.addEventListener('click', toggleButtons);
+        saveTwo.addEventListener('click', toggleButtons);
+        saveThree.addEventListener('click', toggleButtons);
     });
+
 
 
 

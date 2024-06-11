@@ -1,60 +1,60 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
-  .bg img{
+.bg img {
     position: fixed;
     width: 100vw;
     z-index: -15;
     border-radius: 0px;
-  }
-
- video#bg-video {
-  background: url(./img/Kabinett/BG.webm) no-repeat;
-  background-size: cover;
-  position: fixed;
-  width: 100vw;
-  z-index: -15;
-  border-radius: 0px;
 }
 
-  .titel img{
-      width: 40vw;
-      position: fixed;
-      z-index: -5;
-      top: 20px;
-      left: 440px;   
-      right: auto;   
-  }
+video#bg-video {
+    background: url(./img/Kabinett/BG.webm) no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    z-index: -15;
+    border-radius: 0px;
+}
 
-  .colorbar img{
+.titel img {
+    width: 40vw;
+    position: fixed;
+    z-index: -5;
+    top: 20px;
+    left: 440px;
+    right: auto;
+}
+
+.colorbar img {
     position: fixed;
     width: 101%;
     left: -6px;
     bottom: 0px;
     z-index: -10;
-    
-  }
 
-.button{
-        width: 95px;
-        touch-action: none;
-        user-select: none;
-        position: fixed;
+}
+
+.button {
+    width: 95px;
+    touch-action: none;
+    user-select: none;
+    position: fixed;
 }
 
 .save {
     background-color: transparent;
     border: none;
     width: 50px;
+    display: none;
 }
 
 .load {
     background-color: transparent;
     border: none;
-    width: 50px; 
-    display: none;
+    width: 50px;
 }
 
 .controls {
@@ -70,6 +70,7 @@
     align-items: center;
     margin: 0 10px;
 }
+
 .controls-column button {
     margin: 10px 0;
 }
@@ -79,7 +80,7 @@
 }
 
 
-.ball{
+.ball {
     width: 50px;
     touch-action: none;
     user-select: none;
@@ -87,115 +88,145 @@
 }
 
 :root {
-	--move: 190px;
+    --move: 190px;
     --incr: 80px;
     /* variables for moving and spacing the players */
 
     --delaybetween: 0.1s;
-    --startdelay:0.1s; 
+    --startdelay: 0.1s;
     /* variables for blending in the players. startdelay is the seconds when blending in the players starts and time. delaybetween are the seconds between the blend in of the players */
-   }
-
-.row1{
-    top:115px;
 }
-.row2{
+
+.row1 {
+    top: 115px;
+}
+
+.row2 {
     top: 190px;
 }
 
-.row3{
+.row3 {
     top: 265px;
 }
 
-.pos1{
-	left: calc(0px + var(--move));
+.pos1 {
+    left: calc(0px + var(--move));
 }
-.pos2{
-    left: calc(1 * var(--incr)   + var(--move));
+
+.pos2 {
+    left: calc(1 * var(--incr) + var(--move));
 }
-.pos3{
-	left: calc(2 * var(--incr) + var(--move));
+
+.pos3 {
+    left: calc(2 * var(--incr) + var(--move));
 }
-.pos4{
+
+.pos4 {
     left: calc(3 * var(--incr) + var(--move));
 }
-.pos5{
+
+.pos5 {
     left: calc(4 * var(--incr) + var(--move));
 }
-.pos6{
+
+.pos6 {
     left: calc(5 * var(--incr) + var(--move));
 }
-.pos7{
+
+.pos7 {
     left: calc(6 * var(--incr) + var(--move));
 }
-.pos8{
+
+.pos8 {
     left: calc(7 * var(--incr) + var(--move));
 }
-.pos9{
+
+.pos9 {
     left: calc(8 * var(--incr) + var(--move));
 }
-.pos10{
+
+.pos10 {
     left: calc(9 * var(--incr) + var(--move));
 }
-.pos11{
+
+.pos11 {
     left: calc(10 * var(--incr) + var(--move));
 }
-.pos12{
+
+.pos12 {
     left: calc(11 * var(--incr) + var(--move));
 }
-.pos13{
+
+.pos13 {
     left: calc(12 * var(--incr) + var(--move));
 }
-.pos14{
+
+.pos14 {
     left: calc(13 * var(--incr) + var(--move));
 }
-.pos15{
+
+.pos15 {
     left: calc(14 * var(--incr) + var(--move));
 }
-.pos16{
+
+.pos16 {
     left: calc(15 * var(--incr) + var(--move));
 }
-.pos17{
+
+.pos17 {
     left: calc(16 * var(--incr) + var(--move));
 }
-.pos18{
-    left: calc(17 * var(--incr) + var(--move));    
+
+.pos18 {
+    left: calc(17 * var(--incr) + var(--move));
 }
-.pos19{
+
+.pos19 {
     left: calc(18 * var(--incr) + var(--move));
 }
-.pos20{
-    left: calc(19 * var(--incr) + var(--move));    
+
+.pos20 {
+    left: calc(19 * var(--incr) + var(--move));
 }
-.pos21{
-    left: calc(20 * var(--incr) + var(--move));    
+
+.pos21 {
+    left: calc(20 * var(--incr) + var(--move));
 }
-.pos22{
-    left: calc(21 * var(--incr) + var(--move));    
+
+.pos22 {
+    left: calc(21 * var(--incr) + var(--move));
 }
-.pos23{
-    left: calc(22 * var(--incr) + var(--move));    
+
+.pos23 {
+    left: calc(22 * var(--incr) + var(--move));
 }
-.pos24{
-    left: calc(23 * var(--incr) + var(--move));    
+
+.pos24 {
+    left: calc(23 * var(--incr) + var(--move));
 }
-.pos25{
-    left: calc(24 * var(--incr) + var(--move));    
+
+.pos25 {
+    left: calc(24 * var(--incr) + var(--move));
 }
-.pos26{
-    left: calc(25 * var(--incr) + var(--move));    
+
+.pos26 {
+    left: calc(25 * var(--incr) + var(--move));
 }
-.pos27{
-    left: calc(26 * var(--incr) + var(--move));    
+
+.pos27 {
+    left: calc(26 * var(--incr) + var(--move));
 }
-.pos28{
-    left: calc(27 * var(--incr) + var(--move));    
+
+.pos28 {
+    left: calc(27 * var(--incr) + var(--move));
 }
-.pos29{
-    left: calc(28 * var(--incr) + var(--move));    
+
+.pos29 {
+    left: calc(28 * var(--incr) + var(--move));
 }
-.pos30{
-    left: calc(29 * var(--incr) + var(--move));    
+
+.pos30 {
+    left: calc(29 * var(--incr) + var(--move));
 }
 
 .box {
@@ -211,9 +242,10 @@
 
 @keyframes button_player {
     0% {
-    /* transform: scale(0.0); */
+        /* transform: scale(0.0); */
         opacity: 0;
     }
+
     100% {
         /* transform: scale(1.0); not working yet */
         opacity: 1;
@@ -221,114 +253,155 @@
 }
 
 .invisible {
-   
+
     opacity: 0;
     animation: button_player ease-in-out 0.5s;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
-   
+
 }
 
 .invisible.seq1 {
-    animation-delay: calc(1 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(1 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq2 {
-    animation-delay: calc(2 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(2 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq3 {
-    animation-delay: calc(3 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(3 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq4 {
-    animation-delay: calc(4 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(4 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq5 {
-    animation-delay: calc(5 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(5 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq6 {
-    animation-delay: calc(6 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(6 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq7 {
-    animation-delay: calc(7 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(7 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq8 {
-    animation-delay: calc(8 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(8 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq9 {
-    animation-delay: calc(9 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(9 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq10 {
-    animation-delay: calc(10 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(10 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq11 {
-    animation-delay: calc(11 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(11 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq12 {
-    animation-delay: calc(12 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(12 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq13 {
-    animation-delay: calc(13 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(13 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq14 {
-    animation-delay: calc(14 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(14 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq15 {
-    animation-delay: calc(15 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(15 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq16 {
-    animation-delay: calc(16 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(16 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq17 {
-    animation-delay: calc(17 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(17 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq18 {
-    animation-delay: calc(18 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(18 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq19 {
-    animation-delay: calc(19 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(19 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq20 {
-    animation-delay: calc(20 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(20 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq21 {
-    animation-delay: calc(21 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(21 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq22 {
-    animation-delay: calc(22 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(22 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq23 {
-    animation-delay: calc(23 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(23 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq24 {
-    animation-delay: calc(24 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(24 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq25 {
-    animation-delay: calc(25 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(25 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq26 {
-    animation-delay: calc(26 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(26 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq27 {
-    animation-delay: calc(27 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(27 * var(--delaybetween) + var(--startdelay));
+    ;
 }
+
 .invisible.seq28 {
-    animation-delay: calc(28 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(28 * var(--delaybetween) + var(--startdelay));
+    ;
 }
 
 .invisible.seq29 {
-    animation-delay: calc(29 * var(--delaybetween)  + var(--startdelay));;
+    animation-delay: calc(29 * var(--delaybetween) + var(--startdelay));
+    ;
 }
