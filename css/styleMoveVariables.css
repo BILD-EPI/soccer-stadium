@@ -60,7 +60,7 @@
 .controls {
     display: flex;
     margin-bottom: 20px;
-    padding-top: 400px;
+    padding-top: 450px;
     padding-left: 20px;
 }
 
@@ -74,7 +74,9 @@
     margin: 10px 0;
 }
 
-
+.controls-button {
+    width: 40px;
+}
 
 
 .ball{
