@@ -1,66 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styleMoveVariables.css">
+    <link rel="stylesheet" href="./css/styleMoveVariables.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="bg">
-        <img src="./img/stadion2.png" alt="">
+      <img src="./img/stadion2.png" alt="" />
     </div>
     <div class="titel">
-        <img src="./img/TeamName_01.svg" alt="">
+      <img src="./img/TeamName_01.svg" alt="" />
     </div>
-    <!--     <div class="spielfeld">
-        <img src="./img/spielfeld.png" alt=""> -->
+    <div class="colorbar">
+      <img src="./img/colorbarbottom.svg" alt="" />
     </div>
     <!-- <div class="button jogador1" id="jogador1">
         <img src="img/players/RED_1.png" alt="">
     </div> -->
 
-    <img src="img/players/generic/1.png" class="button invisible seq1 row1 pos1" id="button-1" alt="">
-    <img src="img/players/generic/2.png" class="button invisible seq2 row1 pos2" id="button-2" alt="">
-    <img src="img/players/generic/3.png" class="button invisible seq3 row1 pos3" id="button-3" alt="">
-    <img src="img/players/generic/4.png" class="button invisible seq4 row1 pos4" id="button-4" alt="">
-    <img src="img/players/generic/5.png" class="button invisible seq5 row1 pos5" id="button-5" alt="">
-    <img src="img/players/generic/6.png" class="button invisible seq6 row1 pos6" id="button-6" alt="">
-    <img src="img/players/generic/7.png" class="button invisible seq7 row1 pos7" id="button-7" alt="">
-    <img src="img/players/generic/8.png" class="button invisible seq8 row1 pos8" id="button-8" alt="">
-    <img src="img/players/generic/9.png" class="button invisible seq9 row1 pos9" id="button-9" alt="">
-    <img src="img/players/generic/10.png" class="button invisible seq10 row1 pos10" id="button-10" alt="">
-    <img src="img/players/generic/11.png" class="button invisible seq11 row1 pos11" id="button-11" alt="">
-    <img src="img/players/generic/12.png" class="button invisible seq12 row1 pos12" id="button-12" alt="">
-    <img src="img/players/generic/13.png" class="button invisible seq13 row1 pos13" id="button-13" alt="">
-    <img src="img/players/generic/14.png" class="button invisible seq14 row2 pos1" id="button-14" alt="">
-    <img src="img/players/generic/15.png" class="button invisible seq15 row2 pos2" id="button-15" alt="">
-    <img src="img/players/generic/16.png" class="button invisible seq16 row2 pos3" id="button-16" alt="">
-    <img src="img/players/generic/17.png" class="button invisible seq17 row2 pos4" id="button-17" alt="">
-    <img src="img/players/generic/18.png" class="button invisible seq18 row2 pos5" id="button-18" alt="">
-    <img src="img/players/generic/19.png" class="button invisible seq19 row2 pos6" id="button-19" alt="">
-    <img src="img/players/generic/20.png" class="button invisible seq20 row2 pos7" id="button-20" alt="">
-    <img src="img/players/generic/21.png" class="button invisible seq21 row2 pos8" id="button-21" alt="">
-    <img src="img/players/generic/22.png" class="button invisible seq22 row2 pos9" id="button-22" alt="">
-    <img src="img/players/generic/23.png" class="button invisible seq23 row2 pos10" id="button-23" alt="">
-    <img src="img/players/generic/24.png" class="button invisible seq24 row2 pos11" id="button-24" alt="">
-    <img src="img/players/generic/25.png" class="button invisible seq25 row2 pos12" id="button-25" alt="">
-    <img src="img/players/generic/26.png" class="button button invisible seq26 row2 pos13" id="button-26" alt="">
-    <img src="img/ball.png" class="button ball invisible seq27 row3 pos1" alt="">
-    <div>
+    <img
+      src="img/players/generic/1.png"
+      class="button invisible seq1 row1 pos1"
+      id="button-1"
+      alt=""
+    />
+    <img
+      src="img/players/generic/2.png"
+      class="button invisible seq2 row1 pos2"
+      id="button-2"
+      alt=""
+    />
+    <img
+      src="img/players/generic/3.png"
+      class="button invisible seq3 row1 pos3"
+      id="button-3"
+      alt=""
+    />
+    <img
+      src="img/players/generic/4.png"
+      class="button invisible seq4 row1 pos4"
+      id="button-4"
+      alt=""
+    />
+    <img
+      src="img/players/generic/5.png"
+      class="button invisible seq5 row1 pos5"
+      id="button-5"
+      alt=""
+    />
+    <img
+      src="img/players/generic/6.png"
+      class="button invisible seq6 row1 pos6"
+      id="button-6"
+      alt=""
+    />
+    <img
+      src="img/players/generic/7.png"
+      class="button invisible seq7 row1 pos7"
+      id="button-7"
+      alt=""
+    />
+    <img
+      src="img/players/generic/8.png"
+      class="button invisible seq8 row1 pos8"
+      id="button-8"
+      alt=""
+    />
+    <img
+      src="img/players/generic/9.png"
+      class="button invisible seq9 row1 pos9"
+      id="button-9"
+      alt=""
+    />
+    <img
+      src="img/players/generic/10.png"
+      class="button invisible seq10 row1 pos10"
+      id="button-10"
+      alt=""
+    />
+    <img
+      src="img/players/generic/11.png"
+      class="button invisible seq11 row1 pos11"
+      id="button-11"
+      alt=""
+    />
+    <img
+      src="img/players/generic/12.png"
+      class="button invisible seq12 row1 pos12"
+      id="button-12"
+      alt=""
+    />
+    <img
+      src="img/players/generic/13.png"
+      class="button invisible seq13 row1 pos13"
+      id="button-13"
+      alt=""
+    />
+    <img
+      src="img/players/generic/14.png"
+      class="button invisible seq14 row2 pos1"
+      id="button-14"
+      alt=""
+    />
+    <img
+      src="img/players/generic/15.png"
+      class="button invisible seq15 row2 pos2"
+      id="button-15"
+      alt=""
+    />
+    <img
+      src="img/players/generic/16.png"
+      class="button invisible seq16 row2 pos3"
+      id="button-16"
+      alt=""
+    />
+    <img
+      src="img/players/generic/17.png"
+      class="button invisible seq17 row2 pos4"
+      id="button-17"
+      alt=""
+    />
+    <img
+      src="img/players/generic/18.png"
+      class="button invisible seq18 row2 pos5"
+      id="button-18"
+      alt=""
+    />
+    <img
+      src="img/players/generic/19.png"
+      class="button invisible seq19 row2 pos6"
+      id="button-19"
+      alt=""
+    />
+    <img
+      src="img/players/generic/20.png"
+      class="button invisible seq20 row2 pos7"
+      id="button-20"
+      alt=""
+    />
+    <img
+      src="img/players/generic/21.png"
+      class="button invisible seq21 row2 pos8"
+      id="button-21"
+      alt=""
+    />
+    <img
+      src="img/players/generic/22.png"
+      class="button invisible seq22 row2 pos9"
+      id="button-22"
+      alt=""
+    />
+    <img
+      src="img/players/generic/23.png"
+      class="button invisible seq23 row2 pos10"
+      id="button-23"
+      alt=""
+    />
+    <img
+      src="img/players/generic/24.png"
+      class="button invisible seq24 row2 pos11"
+      id="button-24"
+      alt=""
+    />
+    <img
+      src="img/players/generic/25.png"
+      class="button invisible seq25 row2 pos12"
+      id="button-25"
+      alt=""
+    />
+    <img
+      src="img/players/generic/26.png"
+      class="button button invisible seq26 row2 pos13"
+      id="button-26"
+      alt=""
+    />
+    <img
+      src="img/ball.png"
+      class="button ball invisible seq27 row3 pos1"
+      alt=""
+    />
+    <div class="controls">
+      <div class="controls-column">
+        <button class="save" id="save-position">
+            <img src="./img/save.svg" alt="Save Position 1" />
+          </button>
+        <button class="save" id="save-position-1">
+          <img src="./img/save1.svg" alt="Save Position 1" />
+        </button>
+        <button class="save" id="save-position-2">
+          <img src="./img/save2.svg" alt="Save Position 2" />
+        </button>
+        <button class="save" id="save-position-3">
+          <img src="./img/save3.svg" alt="Save Position 3" />
+        </button>
         <button id="reset-button">Reset Position</button>
-        <button class="save" id="save-position-1"><img src="./img/save1.svg" alt="Save Position 1"></button>
-        <button class="save" id="save-position-2"><img src="./img/save2.svg" alt="Save Position 2"></button>
-        <button class="save" id="save-position-3"><img src="./img/save3.svg" alt="Save Position 3"></button>
-        <button class="save" id="load-position-1"><img src="./img/view1.svg" alt="Load Position 1"></button>
-        <button class="save" id="load-position-2"><img src="./img/view2.svg" alt="Load Position 2"></button>
-        <button class="save" id="load-position-3"><img src="./img/view3.svg" alt="Load Position 3"></button>
+
+      </div>
+      <div class="controls-column">
+        <div class="save"></div>
+        <button class="save" id="load-position">
+            <img src="./img/view.svg" alt="Save Position 1" />
+          </button>
+        <button class="save" id="load-position-1">
+          <img src="./img/view1.svg" alt="Load Position 1" />
+        </button>
+        <button class="save" id="load-position-2">
+          <img src="./img/view2.svg" alt="Load Position 2" />
+        </button>
+        <button class="save" id="load-position-3">
+          <img src="./img/view3.svg" alt="Load Position 3" />
+        </button>
+
+      </div>
     </div>
     <script src="js/interact.min.js"></script>
     <script src="js/drag.js"></script>
-</body>
-
+  </body>
 </html>
