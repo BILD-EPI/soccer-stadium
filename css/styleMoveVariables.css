@@ -60,7 +60,7 @@ video#bg-video {
 .controls {
     display: flex;
     margin-bottom: 20px;
-    padding-top: 450px;
+    padding-top: 475px;
     padding-left: 20px;
 }
 
@@ -72,7 +72,7 @@ video#bg-video {
 }
 
 .controls-column button {
-    margin: 10px 0;
+    margin: 1px 0;
 }
 
 .controls-button {
