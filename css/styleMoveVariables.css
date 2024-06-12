@@ -37,7 +37,7 @@
   }
   
   .button {
-    width: 120px;
+    width: 95px;
     touch-action: none;
     user-select: none;
     position: fixed;
@@ -47,7 +47,6 @@
     background-color: transparent;
     border: none;
     width: 50px;
-    display: none
   }
   
   .load {
@@ -58,8 +57,8 @@
   
   .controls {
     display: flex;
-    margin-bottom: 20px;
-    padding-top: 475px;
+    margin-bottom: 1  0px;
+    padding-top: 448px;
     padding-left: 20px;
   }
   
@@ -72,12 +71,11 @@
   
   .controls-column button {
     margin: 1px 0;
-  
   }
   
   .controls-button {
-    width: 40px;
-    padding: 4px;
+    width: 35px;
+    padding: 3px;
   }
   
   .ball {
@@ -107,8 +105,8 @@
   }
   
   :root {
-    --move: 80px;
-    --incr: 97px;
+    --move: 190px;
+    --incr: 80px;
     /* variables for moving and spacing the players */
   
     --delaybetween: 0.1s;
@@ -117,7 +115,7 @@
   }
   
   .row1 {
-    top: 105px;
+    top: 115px;
   }
   
   .row2 {
@@ -125,7 +123,7 @@
   }
   
   .row3 {
-    top: 285px;
+    top: 265px;
   }
   
   .pos1 {
