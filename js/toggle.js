@@ -35,7 +35,6 @@
 
         function blinkElement(element) {
             element.classList.add('blink');
-            console.log(element)
             setTimeout(function() {
                 element.classList.remove('blink');
                 toggleButtons(); 

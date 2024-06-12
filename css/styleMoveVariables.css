@@ -47,7 +47,7 @@ video#bg-video {
   background-color: transparent;
   border: none;
   width: 50px;
-
+  display: none
 }
 
 .load {
@@ -72,10 +72,12 @@ video#bg-video {
 
 .controls-column button {
   margin: 1px 0;
+
 }
 
 .controls-button {
   width: 40px;
+  padding: 4px;
 }
 
 .ball {
