@@ -30,10 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function addTouchAndClickEventListener(element, handler) {
-        element.addEventListener('click', handler);
-        element.addEventListener('touchstart', handler);
-    }
 
     addTouchAndClickEventListener(saveButton, toggleButtons);
     addTouchAndClickEventListener(loadButton, toggleButtons);
