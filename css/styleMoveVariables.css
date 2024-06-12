@@ -37,7 +37,7 @@ video#bg-video {
 }
 
 .button {
-  width: 95px;
+  width: 120px;
   touch-action: none;
   user-select: none;
   position: fixed;
@@ -107,8 +107,8 @@ video#bg-video {
 }
 
 :root {
-  --move: 190px;
-  --incr: 80px;
+  --move: 80px;
+  --incr: 97px;
   /* variables for moving and spacing the players */
 
   --delaybetween: 0.1s;
@@ -117,7 +117,7 @@ video#bg-video {
 }
 
 .row1 {
-  top: 115px;
+  top: 105px;
 }
 
 .row2 {
@@ -125,7 +125,7 @@ video#bg-video {
 }
 
 .row3 {
-  top: 265px;
+  top: 285px;
 }
 
 .pos1 {
