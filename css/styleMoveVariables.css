@@ -58,7 +58,7 @@ video#bg-video {
 .controls {
   display: flex;
   margin-bottom: 1  0px;
-  padding-top: 300px;
+  padding-top: 400px;
   padding-left: 20px;
 }
 
@@ -74,7 +74,7 @@ video#bg-video {
 }
 
 .controls-button {
-  width: 30px;
+  width: 35px;
 }
 
 .ball {
