@@ -47,18 +47,6 @@
 //   }
 // target elements with the "draggable" class
 document.addEventListener('DOMContentLoaded', function() {
-  // Check if the page is being refreshed
-  if (sessionStorage.getItem('isRefresh')) {
-    // Clear current positions in localStorage
-    document.querySelectorAll('.button').forEach(function(button) {
-      var id = button.getAttribute('id');
-      localStorage.removeItem(id + '-position-current-x');
-      localStorage.removeItem(id + '-position-current-y');
-    });
-    // Remove the refresh flag from sessionStorage
-    sessionStorage.removeItem('isRefresh');
-  }
-
   // Initialize interact.js on elements with the "button" class
   interact('.button').draggable({
     inertia: true,
@@ -71,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     autoScroll: true,
     listeners: {
       move: dragMoveListener,
-      end: function(event) {
+      end: function (event) {
         var target = event.target;
         var x = parseFloat(target.getAttribute('data-x')) || 0;
         var y = parseFloat(target.getAttribute('data-y')) || 0;
@@ -137,9 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
       button.setAttribute('data-x', 0);
       button.setAttribute('data-y', 0);
 
-      // Clear the current positions in localStorage
-      localStorage.removeItem(id + '-position-current-x');
-      localStorage.removeItem(id + '-position-current-y');
+      // Do not clear the saved positions in localStorage
     });
   });
 
@@ -170,8 +156,3 @@ function dragMoveListener(event) {
 
 // This function is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
-
-// Before the page unloads, set a flag in sessionStorage to indicate a refresh
-window.addEventListener('beforeunload', function() {
-  sessionStorage.setItem('isRefresh', 'true');
-});
