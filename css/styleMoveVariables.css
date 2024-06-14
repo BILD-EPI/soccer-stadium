@@ -5,11 +5,11 @@
 
 body {
     max-height: 810px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .parent {
-    height: 600px;
+    height: 750px;
     position: relative;
 }
 
