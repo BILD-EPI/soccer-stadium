@@ -70,11 +70,9 @@ video#bg-video {
 
 .controls {
     display: flex;
-    margin-bottom: 20px;
-    padding-top: 485px;
-    padding-left: 20px;
+    left: 2%;
     position: absolute;
-    bottom: 7.5%;
+    bottom: 10%;
 }
 
 .controls-column {
