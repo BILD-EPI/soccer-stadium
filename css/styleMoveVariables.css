@@ -3,12 +3,23 @@
     padding: 0;
 }
 
+body {
+    max-height: 810px;
+    overflow: scroll;
+}
+
+.parent {
+    height: 600px;
+    position: relative;
+}
+
 .bg img {
-    position: fixed;
+    position: absolute;
     width: 100vw;
     z-index: -15;
     border-radius: 0px;
 }
+
 
 video#bg-video {
     background: url(./img/Kabinett/BG.webm) no-repeat;
@@ -62,6 +73,8 @@ video#bg-video {
     margin-bottom: 20px;
     padding-top: 485px;
     padding-left: 20px;
+    position: absolute;
+    bottom: 7.5%;
 }
 
 .controls-column {

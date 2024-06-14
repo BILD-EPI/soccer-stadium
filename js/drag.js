@@ -64,7 +64,7 @@ interact('.button').draggable({
   inertia: true,
   modifiers: [
     interact.modifiers.restrictRect({
-      restriction: 'none',
+      restriction: 'parent',
       endOnly: true
     })
   ],
@@ -90,6 +90,14 @@ interact('.button').draggable({
     }
   }
 });
+
+// interact(target).draggable({
+//   modifiers: [
+//     interact.modifiers.restrictRect({
+//       restriction: 'parent'
+//     })
+//   ]
+// })
 
 // Load positions from localStorage
 document.querySelectorAll('.button').forEach(function(button) {
