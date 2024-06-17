@@ -138,6 +138,7 @@ document.getElementById('reset-button').addEventListener('click', function() {
     button.style.transform = 'translate(0px, 0px)';
     button.setAttribute('data-x', 0);
     button.setAttribute('data-y', 0);
+    button.style.width = '120px';
 
     // Clear the current positions in localStorage
     localStorage.removeItem(id + '-position-current-x');
