@@ -81,6 +81,8 @@ interact('.button').draggable({
       localStorage.setItem(id + '-position-current-x', x);
       localStorage.setItem(id + '-position-current-y', y);
 
+      checkIfInsideTarget(target);
+
       var textEl = target.querySelector('p');
       if (textEl) {
         textEl.textContent = 'Moved a distance of ' +
@@ -167,6 +169,29 @@ target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
 target.setAttribute('data-x', x);
 target.setAttribute('data-y', y);
 }
+
+
+function checkIfInsideTarget(element) {
+  const targetLeft = -7;
+  const targetTop = 203;
+  const targetRight = 1357;
+  const targetBottom = 720;
+
+  const elemRect = element.getBoundingClientRect();
+      console.log(elemRect.left, elemRect.top, elemRect.right ,elemRect.bottom  )
+
+  if (
+      elemRect.left >= targetLeft &&
+      elemRect.top >= targetTop &&
+      elemRect.right <= targetRight &&
+      elemRect.bottom <= targetBottom
+  ) {
+      element.style.width = '200px';
+  } else {
+      element.style.width = '120px';
+  }
+}
+
 
 // This function is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
